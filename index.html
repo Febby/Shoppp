@@ -26,41 +26,33 @@
             <div class="shoppp"><i class="fa fa-shopping-cart"></i>
             </div>
             <h1 class="logo">Shoppp</h1>
-           
-                <span>Let's create your shopping list!</span>
-            <div class="shoppp-form">
-                <form action="">
+            <h2>Let's create your shopping list!</h3>
+                <div class="info">
+                    <p>To add it to the list, simply type in your things and press
+                        <strong>enter</strong>, To delete your things, just
+                        <strong>click</strong>on it</p>
+                </div>
+                <div class="shoppp-form">
+                    <span class="error animated pulse">Oops! Don't forget to fill the input field.</span>
+                    <form action="#">
 
-                    <input type="text" placeholder="Enter Your Item Here..">
-                    <input type="submit" value="Add" />
-                </form>
-            </div>
+                        <input id="shop-item" type="text" placeholder="Enter Your Item Here.." autocomplete="off">
 
-            <section>
-                <div>
-                    <form id="add-item" class="shop-list">
-                        <ul>
-                            <li>
-                                
-                                <label for="milk">Milk</label>
-                            </li>
-                            <li>
-                                
-                                <label for="bacon">Bacon</label>
-                            </li>
-                            <li>
-                               
-                                <label for="chocolate">Chocolate</label>
-                            </li>
-                            <li>
-                                
-                                <label for="meal">Steak</label>
-                            </li>
-                        </ul>
                     </form>
                 </div>
-            </section>
-        </div>
+
+                <section>
+                    <div>
+                        <div id="item-list">
+
+                            <h3>Your List</h3>
+                            <ul>
+
+                            </ul>
+                            </form>
+                        </div>
+                </section>
+                </div>
 
 
     </section>
@@ -69,8 +61,8 @@
     <script>
     window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')
     </script>
-    <!-- <script src="js/plugins.js"></script> -->
     <script src="js/main.js"></script>
+
 
     <script>
     (function(b, o, i, l, e, r) {

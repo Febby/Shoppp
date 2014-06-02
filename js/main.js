@@ -1,8 +1,10 @@
 $(document).ready(function () {
 
+	$('body').addClass('animated bounceIn');
+
 function deleteitem () {
 	 $(document).on('click','.item',function(){
-		$(this).remove();
+		$(this).addClass('animated fadeOut').remove();
 	});
 }
 

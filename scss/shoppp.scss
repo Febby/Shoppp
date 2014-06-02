@@ -17,7 +17,7 @@ $logo-color:#23707F;
 $primary-color: #6EB590;
 $secondary-color: #777;
 //radius
-$radius: 4px;
+$radius: 20px;
 $border-width: 1px;
 
 //Sass Mixins
@@ -110,6 +110,11 @@ h1 {
     }
 }
 
+h3{
+  background: $color-2;
+  color:white;
+  border-radius:5%;
+}
 input{
     appearance: normal;
     -moz-appearance: none;
@@ -121,7 +126,7 @@ input{
 input[type=text]
 {
 display: inline-block;
-  border: $border-width solid #ddd;
+  //border: $border-width solid #ddd;
   margin-bottom: 1em;
   line-height: 1.25em;
   padding: .5em;
@@ -131,13 +136,13 @@ display: inline-block;
   box-shadow: 0 .25em .5em rgba(black, .0625) inset;
   color: $secondary-color;
   &:hover { border-color: lighten($primary-color,20); }
-  &:focus { border-color: $primary-color; outline: none;}  
+  &:focus { border-color: 5px solid $color-2; outline: none;}  
 }
 
 input[type="submit"]{
   font-size: 1.25em;
   display: inline-block;
-  width: auto;
+  //width: auto;
   padding: .5em 1em;
   margin: 0 .25em .5em 0;
   background: $primary-color;
@@ -159,21 +164,24 @@ ul {
 }
 
  li {
+
   //color:#37c489;
   position:relative;
   font-size:1.5em;
   line-height:1.5em;
   border-bottom:1px solid #eee;
+  background: white;
     transition: all 0.2s ease;
    &:hover,:active
-   {background: darken($primary-color,5%);
+   {background: darken(red,5%);
+    cursor: pointer;
   }
   &:last-child {
     border:none;
   }
 }
-.shop-list{
-    background: white;
+#item-list{
+  display: none;
 }
 .wrapper {
     width: 100%;
@@ -213,4 +221,16 @@ ul {
 
     
 }
+
+//validation style
+
+
+.error
+ {
+  display: none;
+  color: #B94A48;
+  background-color: #F2DEDE;
+}
+
+
 

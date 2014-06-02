@@ -784,4 +784,4 @@ li:last-child { border: none; }
 @media (max-width: 1100px) { .shoppp i { transform: scale(8); opacity: 0.1; } }
 @media (max-width: 480px) { .shoppp i { transform: scale(5); opacity: 0.1; } }
 
-.error { display: none; color: #B94A48; background-color: #F2DEDE; }
+.error { display: none; color: #ebf850; font-weight: bold; }

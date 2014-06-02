@@ -22,6 +22,7 @@ $(document).ready(function() {
         	$("#shop-item").removeClass("animated shake");
             $('.error').slideUp();
             $('ul').prepend(listitem);
+            $('#shop-item').val('');
             $('#item-list')
                 .css('display', "block")
                 .addClass('animated bounceIn');
